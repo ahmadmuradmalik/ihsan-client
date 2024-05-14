@@ -17,11 +17,11 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="/path/to/your/image.jpg" className="App-logo" alt="logo" />
+        <img src="public/ihsan_cat.jpeg" className="App-logo" alt="logo" />
         <p>
-          Your display text goes here.
+          Does Ibrahim Ihsan love JLA today?
         </p>
-        <button onClick={fetchText}>Fetch Text</button>
+        <button onClick={fetchText}>Flip a coin and find out!</button>
         <p>{text}</p>
       </header>
     </div>
