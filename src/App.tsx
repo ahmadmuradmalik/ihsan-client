@@ -17,7 +17,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="public/ihsan_cat.jpeg" className="App-logo" alt="logo" />
+        <img src="../public/ihsan_cat.jpeg" className="App-logo" alt="thats fantastic" />
         <p>
           Does Ibrahim Ihsan love JLA today?
         </p>
