@@ -7,7 +7,7 @@ const App: React.FC = () => {
 
   const fetchText = async () => {
     try {
-      const response = await axios.get('/api/text');
+      const response = await axios.get('https://ihsans-server-production.up.railway.app/');
       setText(response.data);
     } catch (error) {
       console.error("Error fetching text", error);
