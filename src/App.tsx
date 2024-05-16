@@ -10,7 +10,9 @@ const App: React.FC = () => {
     setError('');
     setText('');
     try {
-      const response = await axios.get('https://dev-ihsans-server-production.up.railway.app/');
+      const response = await axios.get('/https://dev-ihsans-server-production.up.railway.app/');
+      // const response = await axios.get('http://localhost:5050/');
+
       setText(response.data);
     } catch (error) {
       setError('Error fetching text');
