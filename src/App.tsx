@@ -10,7 +10,7 @@ const App: React.FC = () => {
     setError('');
     setText('');
     try {
-      const response = await axios.get('https://ihsans-server-production.up.railway.app/');
+      const response = await axios.get('https://dev-ihsans-server-production.up.railway.app/');
       setText(response.data);
     } catch (error) {
       setError('Error fetching text');
@@ -22,8 +22,8 @@ const App: React.FC = () => {
     <div className="App">
       <header className="App-header">
         <img src="/ihsan_cat.jpeg" className="App-logo" alt="That's fantastic" />
-        <h1>Does Ibrahim Ihsan love JLA today?</h1>
-        <button onClick={fetchText}>Flip a coin and find out!</button>
+        <h1>Hi?</h1>
+        <button onClick={fetchText}>Find out...</button>
         {error && <p className="error">{error}</p>}
         {text && <p className="result animate__animated animate__fadeIn">{text}</p>}
       </header>
